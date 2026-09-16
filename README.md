@@ -4,7 +4,7 @@ Single-remote multiplexed networking for Roblox with built-in compression, schem
 
 ## Features
 
-- **Single-remote multiplexing** → all communication routes through one RemoteEvent, RemoteFunction, UnreliableRemoteEvent, and BindableEvent
+- **Single-remote multiplexing** → all communication routes through one RemoteEvent, RemoteFunction, UnreliableRemoteEvent, BindableEvent, and BindableFunction
 - **Argument compression** → automatic serialization/deserialization via buffer-based compression
 - **Schema validation** → validate incoming arguments on the server with type-checked schemas
 - **Rate limiting** → built-in token-bucket rate limiting per connection
@@ -134,6 +134,7 @@ Network.Client:FireSignal("PlayerReady", data)
 | `REMOTE_FUNCTION` | RemoteFunction |
 | `UREMOTE_EVENT` | UnreliableRemoteEvent |
 | `BINDABLE_EVENT` | BindableEvent |
+| `BINDABLE_FUNCTION` | BindableFunction |
 
 ### Rate Limit Config
 
